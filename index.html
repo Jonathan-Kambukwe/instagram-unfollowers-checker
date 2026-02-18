@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload JSON</title>
+    <link rel="stylesheet" href="V0-1-2style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="myForm">
+            <h1>Welcome</h1><br>
+            <label for="file">click to upload the two files</label><br><br>
+            <input type="file" multiple name="file" accept=".json" id="file" onchange="javascript:updateList()" />
+            <div id="fileList"></div>
+            <p>dont know which files to upload? <a href="instructions.html" class="link">click here to go the intructions</a></p>
+            <button id="btn" disabled>Start</button><br>
+            <p  class="tip">Tip : Make sure to select both followers and following files</p>
+        </div>
+
+        <div id="results-box">
+            <div id="total"></div>
+            <div id="results">
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p style="text-align: center; color: lightgray; font-style: italic; font-size: 14px;">© 2026 Jonathan.c.kam. All rights reserved.</p>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

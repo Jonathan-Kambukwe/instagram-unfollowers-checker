@@ -1,0 +1,260 @@
+:root{
+  --bg-main: #0a0e1a;
+  --bg-card: #13182e;
+  --blue: #3b82f6;
+  --purple: #a78bfa;
+  --white: #e0e7ff;
+  --text-main: #f3f4f6;
+  --text-muted: #9ca3af;
+  --accent-glow: rgba(59, 130, 246, 0.15);
+}
+
+body{
+  color: var(--text-main);
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: 
+    radial-gradient(ellipse at top, #1e293b 0%, transparent 60%),
+    linear-gradient(135deg, #0a0e1a, #0e1529 60%, #0a0e1a);
+  min-height: 100vh;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+/* ===== FORM ===== */
+#myForm{
+  width: 50%;
+  padding: 48px 32px 32px;
+  border-radius: 24px;
+  margin: auto;
+  margin-top: 8%;
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 
+    0 24px 48px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.02);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(12px);
+}
+
+#myForm h1{
+  font-size: 2.8rem;
+  margin: 0 0 8px 0;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, var(--blue), var(--purple), var(--white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#myForm p{
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ===== FILE INPUT ===== */
+input[type="file"]::file-selector-button{
+  margin-right: 20px;
+  background: transparent;
+  border: 2px dashed rgba(224, 231, 255, 0.3);
+  padding: 32px 40px;
+  height: 100px;
+  width: 100%;
+  border-radius: 16px;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+input[type="file"]::file-selector-button:hover{
+  background: var(--accent-glow);
+  border-color: var(--blue);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(59, 130, 246, 0.2);
+}
+
+/* ===== FILE LIST ===== */
+#fileList ul{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#fileList li{
+  list-style: none;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(167, 139, 250, 0.08));
+  border: 1px solid rgba(224, 231, 255, 0.1);
+  border-radius: 12px;
+  color: #e0e7ff;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+#fileList li:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+}
+
+/* ===== LINK ===== */
+.link{
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: 500;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.link:hover{
+  color: var(--purple);
+}
+
+/* ===== BUTTON ===== */
+#btn{
+  height: 56px;
+  width: 30%;
+  border-radius: 28px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  background: linear-gradient(135deg, var(--blue), var(--purple));
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.3);
+  cursor: pointer;
+}
+
+#btn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.4);
+}
+
+#btn:active{
+  transform: translateY(0px);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+}
+
+#btn:disabled{
+  background: linear-gradient(135deg, #374151, #4b5563);
+  cursor: not-allowed;
+  opacity: 0.5;
+  transform: none;
+  box-shadow: none;
+}
+
+/* ===== RESULTS ===== */
+#results-box{
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  padding: 32px 16px;
+  height: fit-content;
+  width: 90%;
+  margin: 60px auto 60px;
+  box-shadow: 
+    0 24px 48px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(12px);
+}
+
+#results-box a{
+  height: 40px;
+  min-width: 18%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6px;
+  list-style: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  color: #e0e7ff;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  background: rgba(59, 130, 246, 0.08);
+  border: 1px solid rgba(224, 231, 255, 0.08);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#results-box a:hover{
+  transform: translateY(-2px);
+  background: rgba(59, 130, 246, 0.15);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+}
+
+#results-box a:visited{
+  color: #86efac;
+  background: rgba(34, 197, 94, 0.12);
+  border-color: rgba(134, 239, 172, 0.2);
+}
+
+#results-box a:visited:hover{
+  background: rgba(34, 197, 94, 0.18);
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.2);
+}
+
+/* ===== TIP ===== */
+.tip{
+  text-transform: lowercase;
+  font-style: italic;
+  font-size: 13px;
+  color: var(--text-muted);
+  opacity: 0.8;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+  margin-top: 80px;
+  padding: 24px 0;
+}
+
+.footer p{
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* ===== RESPONSIVE  ===== */
+@media (max-width: 1024px){
+  #myForm{ width: 60%; }
+}
+
+@media (max-width: 800px){
+  #myForm{ width: 70%; }
+  .container{ width: 90%; }
+  #results-box{ width: 95%; }
+}
+
+@media (max-width: 650px){
+  #myForm{ 
+    width: 80%;
+    padding: 32px 24px 24px;
+  }
+  #myForm h1{
+    font-size: 2.2rem;
+  }
+  #btn{ width: 60%; }
+  .container{ width: 92%; }
+  #results-box{ width: 98%; }
+}
+
+@media (max-width: 330px){
+  input[type="file"]::file-selector-button{
+    width: 90%;
+    padding: 24px 20px;
+  }
+}

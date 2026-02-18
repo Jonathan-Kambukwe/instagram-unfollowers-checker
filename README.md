@@ -1,98 +1,112 @@
-📊 Instagram Unfollowers Checker (JSON Based)
+<h1>📊 Instagram Unfollowers Checker</h1>
 
-A simple, privacy-focused web tool that lets you see who is not following you back on Instagram — using your exported .json files.
+<h2>🔎 Find Who’s Not Following You Back (Using JSON)</h2>
 
-No login.
-No API.
-No data stored.
-Everything runs 100% in your browser. 🔒
+<p>
+A simple, privacy-focused web tool that lets you see who is <strong>not following you back</strong> on Instagram — using your exported <code>.json</code> files.
+</p>
 
-🚀 How It Works
+<h3>🚫 No Login Required</h3>
+<h3>🚫 No API</h3>
+<h3>🚫 No Data Stored</h3>
+<h3>🔒 Runs 100% In Your Browser</h3>
 
-Go to Instagram → Settings → Download Your Information
+<hr>
 
-Download your data (JSON format)
+<h2>🚀 How It Works</h2>
 
-Extract:
+<ol>
+<li>Go to Instagram → Settings → Download Your Information</li>
+<li>Download your data (JSON format — it comes as a ZIP file)</li>
+<li>Extract:
+    <ul>
+        <li><code>followers.json</code></li>
+        <li><code>following.json</code></li>
+    </ul>
+</li>
+<li>Upload both files into this tool</li>
+<li>Instantly see who doesn’t follow you back ❌</li>
+</ol>
 
-followers.json
+<p><strong>All processing happens client-side using JavaScript.</strong></p>
 
-following.json
+<hr>
 
-Upload both files into this tool
+<h2>🛡 Privacy First</h2>
 
-Instantly see:
+<ul>
+<li>✅ No login required</li>
+<li>✅ No Instagram API usage</li>
+<li>✅ No server</li>
+<li>✅ No backend</li>
+<li>✅ No data uploaded anywhere</li>
+<li>✅ Everything runs locally in your browser</li>
+</ul>
 
-❌ People you follow who don’t follow you back
+<p><strong>Your files never leave your device.</strong></p>
 
-All processing happens client-side using JavaScript.
+<hr>
 
-🛡 Privacy First
+<h2>🧠 Tech Stack</h2>
 
-✅ No login required
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>Vanilla JavaScript</li>
+<li>JSON parsing</li>
+<li>Client-side data comparison</li>
+</ul>
 
-✅ No Instagram API usage
+<hr>
 
-✅ No server
+<h2>💡 Why I Built This</h2>
 
-✅ No backend
-
-✅ No data is uploaded anywhere
-
-✅ Everything runs locally in your browser
-
-Your files never leave your device.
-
-🧠 Tech Stack
-
-HTML
-
-CSS
-
-JavaScript (Vanilla)
-
-JSON file parsing
-
-Client-side data comparison
-
-💡 Why I Built This
-
+<p>
 Instagram doesn’t show you who isn’t following you back.
 Most online tools require login access or use unofficial APIs.
+</p>
 
-This project avoids all that.
+<p>
+This project avoids that completely and gives users a safer alternative.
+</p>
 
-It gives users a safer alternative by letting them analyze their own exported data.
+<hr>
 
-📂 Features
+<h2>📂 Features</h2>
 
-Upload .json files
+<ul>
+<li>Upload <code>.json</code> files</li>
+<li>Compare followers vs following</li>
+<li>Instant results</li>
+<li>Fully client-side processing</li>
+<li>Lightweight and fast</li>
+</ul>
 
-Compare followers vs following
+<hr>
 
-Instant results
+<h2>🌍 Live Demo</h2>
 
-Fully client-side processing
-
-Lightweight and fast
-
-🌍 Live Demo
-
+<p>
 https://followmeback.xo.je/
+</p>
 
-⚠ Disclaimer
+<hr>
 
+<h2>⚠ Disclaimer</h2>
+
+<p>
 This project is not affiliated with Instagram.
-Users must manually export their own data from Instagram.
+Users must manually export their own data.
+</p>
 
-⭐ Contribute
+<hr>
 
-Feel free to:
+<h2>⭐ Contribute</h2>
 
-Open issues
+<ul>
+<li>Open issues</li>
+<li>Suggest improvements</li>
+<li>Submit pull requests</li>
+</ul>
 
-Suggest improvements
-
-Submit pull requests
-
-If you find it useful, consider giving it a ⭐
+<p>If you find it useful, consider giving it a ⭐</p>
